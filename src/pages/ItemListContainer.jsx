@@ -4,6 +4,11 @@ import { fetchData } from '../services/fetchData'
 import ItemList from '../components/ItemListContainer/ItemList'
 
 const ItemListContainer = ({ greeting }) => {
+  const categoryNames = {
+    sustratos: "Sustratos y Complementos",
+    fertilizantes: "Fertilizantes",
+    parafernalia: "Parafernalia"
+  }
   const [list, setList] = useState([])
   const [filteredList, setFilteredList] = useState([])
 
@@ -26,7 +31,11 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div>
       <h1>Lista de Productos</h1>
-      <h1>{greeting}</h1>
+      <h2>
+        {category 
+          ? `Categoría: ${categoryNames[category] || category}` 
+          : greeting}
+      </h2>
       <ItemList list={filteredList} />
     </div>
   )
