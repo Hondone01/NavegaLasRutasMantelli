@@ -3,7 +3,7 @@ export const products = [
  {
   id: 1,
   name: 'Jiffy Redondo base organica para enraizar',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Disco de turba prensada para germinación de semillas.',
   stock: 100,
   price: 590,
@@ -12,7 +12,7 @@ export const products = [
 {
   id: 2,
   name: 'Sustrato Growmix - 80 Lt aereado para cultivo',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Mezcla de sustrato ideal para el cultivo en macetas.',
   stock: 50,
   price: 23650,
@@ -21,7 +21,7 @@ export const products = [
 {
   id: 3,
   name: 'Sustrato Growers Super Soil - 50 Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato enriquecido para un crecimiento óptimo.',
   stock: 30,
   price: 30330,
@@ -30,7 +30,7 @@ export const products = [
 {
   id: 4,
   name: 'Sustrato Growers Super Soil - 20 Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato enriquecido en presentación de 20 litros.',
   stock: 40,
   price: 14810,
@@ -39,7 +39,7 @@ export const products = [
 {
   id: 5,
   name: 'Sustrato Growers Original - 20 Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato original para todo tipo de cultivos.',
   stock: 35,
   price: 14070,
@@ -48,7 +48,7 @@ export const products = [
 {
   id: 6,
   name: 'Sustrato Growers Original - 50 Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato original en presentación de 50 litros.',
   stock: 45,
   price: 28780,
@@ -57,7 +57,7 @@ export const products = [
 {
   id: 7,
   name: 'Abono Orgánico Growers - 10 Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Abono orgánico para enriquecer el sustrato.',
   stock: 60,
   price: 6340,
@@ -66,7 +66,7 @@ export const products = [
 {
   id: 8,
   name: 'Sustrato Dynamics Nº 3 / Klasmann - 70 Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato profesional para cultivos exigentes.',
   stock: 25,
   price: 38470,
@@ -75,7 +75,7 @@ export const products = [
 {
   id: 9,
   name: 'Cultivate Sustrato Premium 80Lts',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato premium para un desarrollo vigoroso.',
   stock: 20,
   price: 43180,
@@ -84,7 +84,7 @@ export const products = [
 {
   id: 10,
   name: 'Sustrato Silver Grow Premium 80lt',
-  category: 'Sustratos y Complementos',
+  category: 'Sustratos',
   description: 'Sustrato de alta calidad para cultivos exigentes.',
   stock: 30,
   price: 38820,
@@ -96,7 +96,7 @@ export const products = [
 {
   id: 11,
   name: 'Fertilizante Top Crop Top Candy - 250 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Aditivo para mejorar el sabor y aroma de las flores.',
   stock: 50,
   price: 9150,
@@ -105,7 +105,7 @@ export const products = [
 {
   id: 12,
   name: 'Fertilizantes Namaste Nutripack x5',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Kit completo de nutrientes para cada etapa del cultivo.',
   stock: 40,
   price: 32590,
@@ -114,7 +114,7 @@ export const products = [
 {
   id: 13,
   name: 'Fertilizante Namaste Oro Negro - 100 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Fertilizante orgánico para mejorar la estructura del suelo.',
   stock: 60,
   price: 4990,
@@ -123,7 +123,7 @@ export const products = [
 {
   id: 14,
   name: 'Fertilizante Namaste Flora Booster - 100 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Aditivo para potenciar la floración de las plantas.',
   stock: 55,
   price: 4990,
@@ -132,7 +132,7 @@ export const products = [
 {
   id: 15,
   name: 'Fertilizante Namaste Amazonia - 150 Gr',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Fertilizante en polvo para estimular el crecimiento.',
   stock: 45,
   price: 12760,
@@ -141,7 +141,7 @@ export const products = [
 {
   id: 16,
   name: 'Fertilizante Top Crop Top Bloom - 250 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Fertilizante líquido para la etapa de floración.',
   stock: 50,
   price: 9150,
@@ -150,7 +150,7 @@ export const products = [
 {
   id: 17,
   name: 'Fertilizante Top Crop Big One - 250 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Potenciador de floración para obtener cosechas abundantes.',
   stock: 35,
   price: 25420,
@@ -159,7 +159,7 @@ export const products = [
 {
   id: 18,
   name: 'Guano Vamp Vegeta Murciélago - 800 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Abono líquido de guano de murciélago para floración.',
   stock: 45,
   price: 8540,
@@ -168,7 +168,7 @@ export const products = [
 {
   id: 19,
   name: 'Fertilizante Top Crop Top Auto - 250 Ml',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Fertilizante específico para plantas autoflorecientes.',
   stock: 50,
   price: 13220,
@@ -177,7 +177,7 @@ export const products = [
 {
   id: 20,
   name: 'Fertilizante Namaste Trico+ - 100 Gr',
-  category: 'Fertilizantes y Aditivos',
+  category: 'Fertilizantes',
   description: 'Aditivo en polvo para estimular la floración.',
   stock: 60,
   price: 6330,
