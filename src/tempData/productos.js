@@ -111,7 +111,7 @@ export const products = [
   stock: 50,
   price: 9150,
   image: 'FertilizanteTopCropTopCandy250Ml.jpg',
-  Detalle: 'Top Crop Top Candy es un aditivo altamente efectivo diseñado para realzar los sabores y aromas naturales de tus flores. Formulado con carbohidratos naturales, este producto estimula la producción de azúcares y resinas, aportando un dulzor característico al final del cultivo. Ideal para la etapa final de floración, mejora tanto el perfil organoléptico como la densidad de los cogollos. Su aplicación resulta en un producto final más atractivo y sabroso para el consumidor.'
+  detalle: 'Top Crop Top Candy es un aditivo altamente efectivo diseñado para realzar los sabores y aromas naturales de tus flores. Formulado con carbohidratos naturales, este producto estimula la producción de azúcares y resinas, aportando un dulzor característico al final del cultivo. Ideal para la etapa final de floración, mejora tanto el perfil organoléptico como la densidad de los cogollos. Su aplicación resulta en un producto final más atractivo y sabroso para el consumidor.'
 },
 {
   id: 12,
@@ -121,7 +121,7 @@ export const products = [
   stock: 40,
   price: 32590,
   image: 'FertilizantesNamasteNutripackx5.jpg',
-  Detalle: 'El Namaste Nutripack x5 es un kit integral que incluye cinco fórmulas esenciales para cubrir todas las fases del cultivo: desde el enraizamiento hasta la floración avanzada. Este paquete ofrece una combinación de macro y micronutrientes, además de bioestimulantes que mejoran la absorción y salud de la planta. Su uso garantiza una nutrición equilibrada y óptima, facilitando un crecimiento vigoroso y cosechas abundantes. Ideal para cultivadores que buscan resultados profesionales en cultivos orgánicos.'
+  detalle: 'El Namaste Nutripack x5 es un kit integral que incluye cinco fórmulas esenciales para cubrir todas las fases del cultivo: desde el enraizamiento hasta la floración avanzada. Este paquete ofrece una combinación de macro y micronutrientes, además de bioestimulantes que mejoran la absorción y salud de la planta. Su uso garantiza una nutrición equilibrada y óptima, facilitando un crecimiento vigoroso y cosechas abundantes. Ideal para cultivadores que buscan resultados profesionales en cultivos orgánicos.'
 },
 {
   id: 13,
@@ -131,7 +131,7 @@ export const products = [
   stock: 60,
   price: 4990,
   image: 'FertilizanteNamasteOroNegro100Ml.jpg',
-  Detalle: 'Namaste Oro Negro es un fertilizante orgánico concentrado, elaborado a partir de materia orgánica activa que mejora la estructura y fertilidad del suelo. Su contenido en ácidos húmicos y fúlvicos potencia la retención de nutrientes y agua, promoviendo raíces más fuertes y sanas. Recomendado para suelos pobres o agotados, estimula la vida microbiana del sustrato, optimizando el ambiente radicular. Es ideal como complemento para potenciar cualquier programa de nutrición vegetal.'
+  detalle: 'Namaste Oro Negro es un fertilizante orgánico concentrado, elaborado a partir de materia orgánica activa que mejora la estructura y fertilidad del suelo. Su contenido en ácidos húmicos y fúlvicos potencia la retención de nutrientes y agua, promoviendo raíces más fuertes y sanas. Recomendado para suelos pobres o agotados, estimula la vida microbiana del sustrato, optimizando el ambiente radicular. Es ideal como complemento para potenciar cualquier programa de nutrición vegetal.'
 },
 {
   id: 14,
@@ -141,7 +141,7 @@ export const products = [
   stock: 55,
   price: 4990,
   image: 'FertilizanteNamasteFloraBooster100Ml.jpg',
-  Detalle: 'Flora Booster de Namaste es un aditivo formulado especialmente para intensificar la floración y maximizar la producción de flores en las plantas. Contiene una combinación de nutrientes y estimulantes naturales que promueven la formación de flores más densas, aromáticas y resinosas. Es ideal para ser aplicado durante las fases críticas de la floración, incrementando el rendimiento final del cultivo. Este producto es compatible con otros fertilizantes del programa Namaste, potenciando su efectividad.'
+  detalle: 'Flora Booster de Namaste es un aditivo formulado especialmente para intensificar la floración y maximizar la producción de flores en las plantas. Contiene una combinación de nutrientes y estimulantes naturales que promueven la formación de flores más densas, aromáticas y resinosas. Es ideal para ser aplicado durante las fases críticas de la floración, incrementando el rendimiento final del cultivo. Este producto es compatible con otros fertilizantes del programa Namaste, potenciando su efectividad.'
 },
 {
   id: 15,
@@ -151,7 +151,7 @@ export const products = [
   stock: 45,
   price: 12760,
   image: 'FertilizanteNamasteAmazonia150Gr.jpg',
-  Detalle: 'Namaste Amazonia es un fertilizante en polvo de alta concentración, formulado con extractos vegetales y minerales naturales. Ideal para la etapa de crecimiento, aporta los nutrientes esenciales para un desarrollo vegetativo vigoroso. Su fórmula fortalece las estructuras celulares, fomenta la producción de hojas y prepara a la planta para una floración saludable. Fácil de aplicar y de rápida absorción, es ideal tanto para principiantes como para cultivadores avanzados que buscan un desarrollo explosivo en sus cultivos.'
+  detalle: 'Namaste Amazonia es un fertilizante en polvo de alta concentración, formulado con extractos vegetales y minerales naturales. Ideal para la etapa de crecimiento, aporta los nutrientes esenciales para un desarrollo vegetativo vigoroso. Su fórmula fortalece las estructuras celulares, fomenta la producción de hojas y prepara a la planta para una floración saludable. Fácil de aplicar y de rápida absorción, es ideal tanto para principiantes como para cultivadores avanzados que buscan un desarrollo explosivo en sus cultivos.'
 },
 {
   id: 16,
@@ -161,7 +161,7 @@ export const products = [
   stock: 50,
   price: 9150,
   image: 'FertilizanteTopCropTopBloom250Ml.jpg',
-  Detalle: 'Top Bloom de Top Crop es un fertilizante líquido rico en fósforo y potasio, elementos fundamentales para la etapa de floración. Su fórmula líquida de rápida absorción favorece la formación de flores más grandes, pesadas y aromáticas. Su uso constante durante la floración asegura una mejor producción y calidad en la cosecha final. Es ideal para combinar con otros productos de la línea Top Crop, garantizando un plan nutricional equilibrado y efectivo para todo tipo de cultivos.'
+  detalle: 'Top Bloom de Top Crop es un fertilizante líquido rico en fósforo y potasio, elementos fundamentales para la etapa de floración. Su fórmula líquida de rápida absorción favorece la formación de flores más grandes, pesadas y aromáticas. Su uso constante durante la floración asegura una mejor producción y calidad en la cosecha final. Es ideal para combinar con otros productos de la línea Top Crop, garantizando un plan nutricional equilibrado y efectivo para todo tipo de cultivos.'
 },
 {
   id: 17,
@@ -171,7 +171,7 @@ export const products = [
   stock: 35,
   price: 25420,
   image: 'FertilizanteTopCropBigOne250Ml.jpg',
-  Detalle: 'Big One de Top Crop es un poderoso potenciador de floración, desarrollado para estimular una mayor producción de flores en un corto período de tiempo. Formulado con extractos de algas y otros compuestos bioactivos, mejora el tamaño, densidad y calidad de las flores. Su acción intensiva permite obtener cosechas más pesadas y productivas. Se recomienda su uso en combinación con fertilizantes de floración para maximizar sus efectos. Es apto tanto para cultivo en tierra como en hidroponía.'
+  detalle: 'Big One de Top Crop es un poderoso potenciador de floración, desarrollado para estimular una mayor producción de flores en un corto período de tiempo. Formulado con extractos de algas y otros compuestos bioactivos, mejora el tamaño, densidad y calidad de las flores. Su acción intensiva permite obtener cosechas más pesadas y productivas. Se recomienda su uso en combinación con fertilizantes de floración para maximizar sus efectos. Es apto tanto para cultivo en tierra como en hidroponía.'
 },
 {
   id: 18,
@@ -181,7 +181,7 @@ export const products = [
   stock: 45,
   price: 8540,
   image: 'GuanoVampVegetaMurciélago800Ml.jpg',
-  Detalle: 'Guano Vamp Vegeta es un fertilizante líquido de origen 100% natural, elaborado a base de guano de murciélago, altamente efectivo en la etapa de floración. Rico en fósforo y otros micronutrientes, promueve el desarrollo de flores grandes y saludables. Además, su composición natural mejora la calidad del suelo y estimula la actividad microbiana beneficiosa. Ideal para cultivos orgánicos, aporta un impulso significativo a la floración sin dejar residuos químicos. Apto para uso en interiores y exteriores.'
+  detalle: 'Guano Vamp Vegeta es un fertilizante líquido de origen 100% natural, elaborado a base de guano de murciélago, altamente efectivo en la etapa de floración. Rico en fósforo y otros micronutrientes, promueve el desarrollo de flores grandes y saludables. Además, su composición natural mejora la calidad del suelo y estimula la actividad microbiana beneficiosa. Ideal para cultivos orgánicos, aporta un impulso significativo a la floración sin dejar residuos químicos. Apto para uso en interiores y exteriores.'
 },
 {
   id: 19,
@@ -191,7 +191,7 @@ export const products = [
   stock: 50,
   price: 13220,
   image: 'FertilizanteTopCropTopAuto250Ml.jpg',
-  Detalle: 'Top Crop Top Auto es un fertilizante completo diseñado específicamente para plantas autoflorecientes. Su fórmula equilibrada proporciona todos los nutrientes necesarios durante las distintas etapas del ciclo de vida corto de estas variedades. Facilita un crecimiento rápido y una floración abundante, garantizando una cosecha de alta calidad. Ideal para cultivadores que buscan un rendimiento máximo en espacios reducidos o cultivos rápidos. Se puede usar en tierra, coco o hidroponía sin complicaciones.'
+  detalle: 'Top Crop Top Auto es un fertilizante completo diseñado específicamente para plantas autoflorecientes. Su fórmula equilibrada proporciona todos los nutrientes necesarios durante las distintas etapas del ciclo de vida corto de estas variedades. Facilita un crecimiento rápido y una floración abundante, garantizando una cosecha de alta calidad. Ideal para cultivadores que buscan un rendimiento máximo en espacios reducidos o cultivos rápidos. Se puede usar en tierra, coco o hidroponía sin complicaciones.'
 },
 {
   id: 20,
@@ -201,7 +201,7 @@ export const products = [
   stock: 60,
   price: 6330,
   image: 'FertilizanteNamasteTrico100Gr.jpg',
-  Detalle: 'Namaste Trico+ es un aditivo biológico en polvo, formulado con tricodermas y microorganismos beneficiosos que mejoran la salud del sustrato y estimulan una floración exuberante. Favorece la simbiosis con las raíces, incrementando la absorción de nutrientes y fortaleciendo la resistencia frente a enfermedades. Su uso mejora notablemente la calidad de las flores y acelera los tiempos de desarrollo. Es ideal para combinaciones con otros fertilizantes orgánicos dentro de un plan nutricional completo.'
+  detalle: 'Namaste Trico+ es un aditivo biológico en polvo, formulado con tricodermas y microorganismos beneficiosos que mejoran la salud del sustrato y estimulan una floración exuberante. Favorece la simbiosis con las raíces, incrementando la absorción de nutrientes y fortaleciendo la resistencia frente a enfermedades. Su uso mejora notablemente la calidad de las flores y acelera los tiempos de desarrollo. Es ideal para combinaciones con otros fertilizantes orgánicos dentro de un plan nutricional completo.'
 },
 
 // Categoría: Parafernalia
@@ -305,5 +305,5 @@ export const products = [
   price: 1150,
   image: 'PapelZeusBlack11450hojas.jpg',
   detalle: 'El papel Zeus Black 1 1/4 se presenta en un elegante empaque con 50 hojas, ideal para fumadores frecuentes. Su tamaño es perfecto para armados compactos y prácticos. El papel es delgado y de combustión lenta, manteniendo el sabor del contenido. Una opción confiable y sofisticada para quienes buscan calidad y estilo en cada fumada.'
-}
+},
 ]

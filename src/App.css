@@ -66,12 +66,12 @@ main{
   margin-bottom: 1rem;
 }
 
-.detalle {
+.detail {
   color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100%;
 }
 

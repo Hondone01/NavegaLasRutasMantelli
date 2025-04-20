@@ -15,10 +15,10 @@ const ItemDetailContainer = () => {
   }, [])
 
   return (
-    <div className='detalle'>
+    <div className='detail'>
       <div className='detalle-div'>
       <h2>{detail.name}</h2>
-      <p>{detail.description}</p>
+      <h2>{detail.description}</h2>
       <h3>Stock: {detail.stock}</h3>
       <h3>Price: ${detail.price}</h3>
       <p className='parrafo'>{detail.detalle}</p>
