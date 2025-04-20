@@ -30,11 +30,9 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <div>
-      <h1>Lista de Productos</h1>
-      <h2>
-        {category 
-          ? `Categoría: ${categoryNames[category] || category}` 
-          : greeting}
+      <h1 className='titulo'>Lista de Productos</h1>
+      <h2 className="categoria-titulo">
+      {category ? `Categoría: ${categoryNames[category] || category}` : ""}
       </h2>
       <ItemList list={filteredList} />
     </div>
