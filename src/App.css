@@ -63,6 +63,23 @@ main{
   margin-bottom: 1rem;
 }
 
+.detalle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+.detalle-div{
+  text-align: center;
+  width: 650px;
+}
+.parrafo{
+  text-align: justify;
+}
+
 
 .cart-widget {
   margin-right: 30px;
