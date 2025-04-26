@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-const Counter = () => {
-    const [counter, seCounter] = useState(0)
+const Counter = ({stock}) => {
+    const [counter, setCounter] = useState(0)
 
 const restar = () => {
     setCounter(counter - 1)
@@ -12,9 +12,9 @@ const sumar = () => {
       
   return (
     <div>
-      <button onClick={restar}>-</button>
+      <button onClick={restar} disabled={counter == 0}>-</button>
       <h4>{counter}</h4>
-      <button onClick={sumar}>+</button>
+      <button onClick={sumar} disabled={counter >= stock}>+</button>
     </div>
   )
 }

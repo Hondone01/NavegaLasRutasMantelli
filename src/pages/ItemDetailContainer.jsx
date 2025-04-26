@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
       <h3>Stock: {detail.stock}</h3>
       <h3>Price: ${detail.price}</h3>
       <p className='parrafo'>{detail.detalle}</p>
-      <Counter />
+      <Counter stock={detail.stock}/>
       </div>
     </div>
   )
