@@ -2,17 +2,24 @@ import React, { useEffect, useState } from 'react'
 import { fetchDataById } from '../services/fetchData'
 import { useParams } from 'react-router'
 import Counter from '../components/Counter'
+import { useGlobalStates } from '../context/Context'
+
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
+  const [counter, setCounter] = useState(0)
+  const {cart, setCart} = useGlobalStates()
   const { id } = useParams()
-  console.log(id)
-
+  
   useEffect(() => {
     fetchDataById(id).then(res => {
       console.log(res)
       setDetail(res)
     })
   }, [])
+
+  const addCart = () => {
+    setCart([])
+  }
 
   return (
     <div className='detail'>
@@ -22,7 +29,8 @@ const ItemDetailContainer = () => {
       <h3>Stock: {detail.stock}</h3>
       <h3>Price: ${detail.price}</h3>
       <p className='parrafo'>{detail.detalle}</p>
-      <Counter stock={detail.stock}/>
+      <Counter stock={detail.stock} counter={counter} setCounter={setCounter}/>
+      <button onClick={addCart}>Agregar al carrito 🛒</button>
       </div>
     </div>
   )

@@ -4,7 +4,7 @@ import Navbar from './components/Header/Navbar'
 import { Route, Routes } from 'react-router'
 import Contact from './pages/Contact'
 import ItemDetailContainer from './pages/ItemDetailContainer'
-import { useState } from 'react'
+import { useState} from 'react'
 import Home from './pages/Home'
 
 function App() {
@@ -12,15 +12,6 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <label>Nombre: </label>
-      <input
-        type='text'
-        onChange={event => {
-          console.log(event.target.value)
-          setName(event.target.value)
-        }}
-      />
-      Nombre: {name} */}
       <main>
       <Routes>
         <Route path='/home' element={<Home />} />

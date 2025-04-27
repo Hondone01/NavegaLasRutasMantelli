@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 const CartWidget = () => {
   return (
     <div className='cart-widget'>
