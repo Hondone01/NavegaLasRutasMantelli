@@ -6,10 +6,15 @@ export const GlobalStates = createContext()
 const ContextProvider = ({ children }) => {
   const [cart, setCart] = useState([])
   const [list, setList] = useState([])
+  const [loading, setLoading] = useState (true)
 
+//llamado a firebase
   useEffect(() => {
+    setLoading(true)
     fetchData().then(res => {
+      console.log(res)
       setList(res)
+      setLoading(false)
     })
   }, [])
 

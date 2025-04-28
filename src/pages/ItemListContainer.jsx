@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 import { useGlobalStates } from '../context/Context'
 import ItemList from '../components/ItemListContainer/ItemList'
 
-const ItemListContainer = ({ greeting }) => {
-  const { list } = useGlobalStates()
+const ItemListContainer = () => {
+  const { list, loading } = useGlobalStates()
   const { category } = useParams()
 
   const [filteredList, setFilteredList] = useState([])
@@ -30,7 +30,7 @@ const ItemListContainer = ({ greeting }) => {
       <h2 className="categoria-titulo">
         {category ? `Categoría: ${categoryNames[category] || category}` : ""}
       </h2>
-      <ItemList list={filteredList} />
+      {loading ? 'Cargando lista...' : <ItemList list={filteredList} />}
     </div>
   )
 }
