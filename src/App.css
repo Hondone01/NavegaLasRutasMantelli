@@ -96,6 +96,10 @@ main{
   font-size: 1.2rem;
 }
 
+.cart-widget a{
+  text-decoration: none;
+}
+
 .item-products {
   display: flex;
   flex-direction: column;

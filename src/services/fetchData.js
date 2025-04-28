@@ -15,3 +15,8 @@ export function fetchDataById(id) {
     }, )
   })
 }
+
+//Funcion para llamar a la lista completa
+//Funcion para obener detalle
+//Funcion para llamar por categoria
+//Funcion para crear ordenes

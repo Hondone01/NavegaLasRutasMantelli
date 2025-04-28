@@ -1,9 +1,11 @@
+import { Link } from "react-router"
+
 const CartWidget = () => {
   return (
     <div className='cart-widget'>
-      <h3>
+      <Link to='/cart'>
         🛒<span>0</span>
-      </h3>
+      </Link>
     </div>
   )
 }

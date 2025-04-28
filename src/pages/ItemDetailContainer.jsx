@@ -12,13 +12,13 @@ const ItemDetailContainer = () => {
   
   useEffect(() => {
     fetchDataById(id).then(res => {
-      console.log(res)
+      console.log('respuesta', res)
       setDetail(res)
     })
   }, [])
 
   const addCart = () => {
-    setCart([])
+    setCart([...cart, {...detail, quantity: counter}])
   }
 
   return (
@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
       <h3>Price: ${detail.price}</h3>
       <p className='parrafo'>{detail.detalle}</p>
       <Counter stock={detail.stock} counter={counter} setCounter={setCounter}/>
-      <button onClick={addCart}>Agregar al carrito 🛒</button>
+      <button onClick={addCart} disabled={counter==0}>Agregar al carrito 🛒</button>
       </div>
     </div>
   )
