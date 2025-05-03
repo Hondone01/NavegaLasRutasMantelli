@@ -3,6 +3,8 @@ import { fetchDataById } from '../services/fetchData'
 import { useParams } from 'react-router-dom' // ATENCIÓN: debía ser 'react-router-dom' no 'react-router'
 import Counter from '../components/Counter'
 import { useGlobalStates } from '../context/Context'
+import Loader from '../components/Loader'
+import { getProductById } from '../services/firebaseServices'
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
@@ -13,13 +15,11 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetchDataById(id).then(res => {
+    getProductById(id).then(res => {
         setDetail(res)
-      })
-      .finally(() => {
         setLoading(false)
       })
-  }, [id])
+  }, [])
 
   const addCart = () => {
     setCart([...cart, { ...detail, quantity: counter }])
@@ -29,9 +29,10 @@ const ItemDetailContainer = () => {
     <div className='detail'>
       <div className='detalle-div'>
         {loading ? (
-          <p>Cargando elemento...</p>
+         <Loader />
         ) : (
           <>
+            <img src={detail.image} alt='' width={300} />
             <h2>{detail.name}</h2>
             <h2>{detail.description}</h2>
             <h3>Stock: {detail.stock}</h3>
