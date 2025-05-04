@@ -4,7 +4,7 @@ import { useGlobalStates } from '../../context/Context'
 const CartWidget = () => {
   const { calcularItems } = useGlobalStates()
   return (
-    <div>
+    <div className='cart-widget'>
       <Link to='/cart'>
         🛒<span>{calcularItems}</span>
       </Link>

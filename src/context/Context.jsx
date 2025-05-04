@@ -6,7 +6,7 @@ export const GlobalStates = createContext()
 const ContextProvider = ({ children }) => {
   const [cart, setCart] = useState([])
   //const [total, setTotal] = useState (240)
-  //const [list, setList] = useState([])
+  const [list, setList] = useState([])
   const [loading, setLoading] = useState (true)
 
 
@@ -27,13 +27,14 @@ const ContextProvider = ({ children }) => {
     return  total + prod.quantity
   },0)
   const calcularTotal = cart.reduce ((total, prod) => {
-    return total + prod.quantity * prod.price
+    return total + (prod.quantity * prod.price)
   },0)
   return (
     <GlobalStates.Provider 
     value={{ 
       cart,
       setCart,
+      list,
       loading,
       setLoading,
       calcularTotal,

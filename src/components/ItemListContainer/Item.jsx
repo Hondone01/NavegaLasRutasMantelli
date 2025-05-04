@@ -4,15 +4,10 @@ import { Link } from 'react-router'
 const Item = ({ item }) => {
   return (
     <div className='item-products'>
+      <img src={item.image} alt="" width={200} />
       <h3>{item.title}</h3>
-      <img
-      src={`/assets/${item.image}`} // esto funciona si assets está en "public"
-      alt={item.title}
-      style={{ width: '200px' }}
-      />
-
       <h4> Precio: ${item.price}</h4>
-      <Link className='item-list' to={'/item/' + item.id}>Ver detalle</Link>
+      <Link to={'/item/' + item.id}>Ver detalle</Link>
     </div>
   )
 }

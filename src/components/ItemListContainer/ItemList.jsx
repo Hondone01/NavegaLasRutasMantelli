@@ -1,6 +1,6 @@
 import React from 'react'
 import Item from './Item'
-import { useNavigate } from 'react-router'
+//import { useNavigate } from 'react-router'
 
 const ItemList = ({ list }) => {
   return (
