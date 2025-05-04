@@ -1,23 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react"
-//import { fetchData } from "../services/fetchData"
-//import {getProducts} from "../services/firebaseServices.js"
 export const GlobalStates = createContext()
 
 const ContextProvider = ({ children }) => {
   const [cart, setCart] = useState([])
-  //const [total, setTotal] = useState (240)
-  const [list, setList] = useState([])
   const [loading, setLoading] = useState (true)
-
-//llamado a firebase
- // useEffect(() => {
-  //  setLoading(true)
- //   getProducts().then(res => {
- //     console.log(res)
- //     setList(res)
- //     setLoading(false)
- //   })
- // }, [])
 
   const calcularItems = cart.reduce ((total, prod) => {
     return  total + prod.quantity
@@ -30,7 +16,7 @@ const ContextProvider = ({ children }) => {
     value={{ 
       cart,
       setCart,
-      list,
+      //list,
       loading,
       setLoading,
       calcularTotal,
