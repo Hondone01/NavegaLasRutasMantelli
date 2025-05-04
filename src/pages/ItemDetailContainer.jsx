@@ -9,8 +9,7 @@ import { getProductById } from '../services/firebaseServices'
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
   const [counter, setCounter] = useState(0)
-  const [loading, setLoading] = useState(true) // Manejar loading localmente
-  const { cart, setCart } = useGlobalStates()
+  const { cart, setCart, loading, setLoading } = useGlobalStates()
   const { id } = useParams()
 
   useEffect(() => {
