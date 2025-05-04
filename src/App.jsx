@@ -7,6 +7,7 @@ import ItemDetailContainer from './pages/ItemDetailContainer'
 import { useState} from 'react'
 import Home from './pages/Home'
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 
 function App() {
   const [name, setName] = useState('')
@@ -20,6 +21,7 @@ function App() {
         <Route path='/products/:category' element={<ItemListContainer />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/item/:id' element={<ItemDetailContainer />} />
+        <Route path='/checkout' element={<Checkout />} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='*' element={<h1>Page not Found - Error 404</h1>} />
       </Routes>

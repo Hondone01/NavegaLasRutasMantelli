@@ -1,38 +1,27 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { useGlobalStates } from '../context/Context'
 import ItemList from '../components/ItemListContainer/ItemList'
+import { useGlobalStates } from '../context/Context'
+import Loader from '../components/Loader'
+import { useParams } from 'react-router'
+import { getByCategory, getProducts } from '../services/firebaseServices'
 
 const ItemListContainer = () => {
-  const { list, loading } = useGlobalStates()
+  const [list, setList] = useState([])
+  const { loading, setLoading } = useGlobalStates()
   const { category } = useParams()
-
-  const [filteredList, setFilteredList] = useState([])
-
-  const categoryNames = {
-    sustratos: "Sustratos y Complementos",
-    fertilizantes: "Fertilizantes",
-    parafernalia: "Parafernalia"
-  }
-
+  console.log(category)
+  // Filtrado de productos por categoría
   useEffect(() => {
-    if (category) {
-      const filtered = list.filter(item => item.category === category)
-      setFilteredList(filtered)
-    } else {
-      setFilteredList(list)
-    }
-  }, [category, list])
+    setLoading(true)
+    const fetchLista = category ? getByCategory : getProducts
+    fetchLista(category && category).then(res => {
+      console.log(res)
+      setList(res)
+      setLoading(false)
+    })
+  }, [category])
 
-  return (
-    <div>
-      <h1 className='titulo'>Lista de Productos</h1>
-      <h2 className="categoria-titulo">
-        {category ? `Categoría: ${categoryNames[category] || category}` : ""}
-      </h2>
-      {loading ? 'Cargando lista...' : <ItemList list={filteredList} />}
-    </div>
-  )
+  return <div>{loading ? <Loader /> : <ItemList list={list} />}</div>
 }
 
 export default ItemListContainer

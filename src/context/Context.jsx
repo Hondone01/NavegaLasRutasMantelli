@@ -1,12 +1,12 @@
-import { createContext, useContext, useState, useEffect } from "react"
-import { fetchData } from "../services/fetchData"
-import {getProducts} from "../services/firebaseServices.js"
+import { createContext, useContext, useEffect, useState } from "react"
+//import { fetchData } from "../services/fetchData"
+//import {getProducts} from "../services/firebaseServices.js"
 export const GlobalStates = createContext()
 
 const ContextProvider = ({ children }) => {
   const [cart, setCart] = useState([])
-  const [total, setTotal] = useState (240)
-  const [list, setList] = useState([])
+  //const [total, setTotal] = useState (240)
+  //const [list, setList] = useState([])
   const [loading, setLoading] = useState (true)
 
 
@@ -14,24 +14,32 @@ const ContextProvider = ({ children }) => {
 
 
 //llamado a firebase
-  useEffect(() => {
-    setLoading(true)
-    getProducts().then(res => {
-      console.log(res)
-      setList(res)
-      setLoading(false)
-    })
-  }, [])
+ // useEffect(() => {
+  //  setLoading(true)
+ //   getProducts().then(res => {
+ //     console.log(res)
+ //     setList(res)
+ //     setLoading(false)
+ //   })
+ // }, [])
 
-  const calcularitems = cart.reduce ((total, prod) => {
+  const calcularItems = cart.reduce ((total, prod) => {
     return  total + prod.quantity
   },0)
-   console.log(calcularitems)
   const calcularTotal = cart.reduce ((total, prod) => {
     return total + prod.quantity * prod.price
   },0)
   return (
-    <GlobalStates.Provider value={{ cart, setCart, list, loading, setLoading }}>
+    <GlobalStates.Provider 
+    value={{ 
+      cart,
+      setCart,
+      loading,
+      setLoading,
+      calcularTotal,
+      calcularItems,
+      }}
+    >
       {children}
     </GlobalStates.Provider>
   )
