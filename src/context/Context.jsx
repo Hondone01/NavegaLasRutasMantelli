@@ -9,10 +9,6 @@ const ContextProvider = ({ children }) => {
   const [list, setList] = useState([])
   const [loading, setLoading] = useState (true)
 
-
-
-
-
 //llamado a firebase
  // useEffect(() => {
   //  setLoading(true)
