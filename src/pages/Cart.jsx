@@ -7,7 +7,7 @@ const Cart = () => {
   console.log(cart)
 
   return (
-    <div>
+    <div className='vista-checkout'>
       {cart.map(prod => (
         <div key={prod.id} className='card'>
           <h3>{prod.title}</h3>
