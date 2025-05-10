@@ -1,8 +1,34 @@
-# React + Vite
+# 🐲 C-Monster GrowShop Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una tienda online enfocada en la venta de productos para cultivo, como macetas, fertilizantes, kits de iluminación, sistemas de riego y más. El objetivo es ofrecer una experiencia de usuario intuitiva, rápida y responsiva tanto en dispositivos móviles como de escritorio.
 
-Currently, two official plugins are available:
+## 🚀 Descripción del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+C-Monster es una SPA (Single Page Application) desarrollada con React y Vite, diseñada para ofrecer un catálogo interactivo de productos, con navegación fluida entre secciones gracias a React Router. El sitio está desplegado en Vercel para garantizar una carga rápida y disponibilidad global.
+
+## 🛠️ Herramientas Utilizadas
+
+- **React JS + Vite** – Framework principal para construir la interfaz de usuario. – Herramienta de build ultrarrápida para proyectos modernos con React.
+- **React Router DOM** – Para manejar rutas internas en la aplicación sin recargas.
+- **Firebase** – Plataforma backend utilizada para:
+  - Almacenamiento de productos en Firestore
+  - Autenticación de usuarios
+  - Hosting opcional y funciones en la nube
+- **Vercel** – Plataforma de despliegue para frontend y hosting gratuito con integración continua.
+
+## 🧪 Guía de Instalación
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/growshop-ecommerce.git
+cd growshop-ecommerce
+```
+### 2. Instalar dependencias
+```bash 
+npm install
+```
+### 3. Levantar el proyecto
+```bash
+npm run dev
+```
