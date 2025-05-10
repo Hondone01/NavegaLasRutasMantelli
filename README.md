@@ -32,3 +32,6 @@ npm install
 ```bash
 npm run dev
 ```
+### Deploy de mi proyecto
+```bash
+[Deploy Vercel] (https://linkdevercel.vercel.app/)
