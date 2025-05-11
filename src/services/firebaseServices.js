@@ -4,10 +4,12 @@ import {
   doc, 
   getDocs, 
   getDoc, 
+  updateDoc,
   query, 
   where,
 } from "firebase/firestore"
 import{db} from "../config/firebaseConfig"
+import Swal from 'sweetalert2'  
 
 export const getProducts = async () => {
   const prodCollection =collection(db, 'Productos')
@@ -39,4 +41,21 @@ export const createOrder = async (newOrder) => {
         console.log(err)
         throw new Error (err)
     }
+}
+
+export const updateStock = async (id, quantity) => {
+  try {
+    const prodDoc = doc(db, 'Productos', id)
+    const producto = await getDoc(prodDoc)
+    const currentStock = producto.data().stock
+
+    await updateDoc(prodDoc, { stock: currentStock - quantity })
+  } catch (err) {
+    console.log(err)
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Error al actualizar el stock',
+    })
+  }
 }
