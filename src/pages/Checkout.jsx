@@ -29,6 +29,15 @@ const Checkout = () => {
 
     const handleSubmit = async (event) => {
       event.preventDefault()
+      if (cart.length === 0) {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Carrito vacío',
+          text: 'Agregá productos antes de finalizar la compra.',
+        })
+        return
+      }
+      
       let hasError = false
     
       if (user.name.length < 5 || !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(user.email) || user.tel.length !== 10) {

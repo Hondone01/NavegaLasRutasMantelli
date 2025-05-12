@@ -1,5 +1,5 @@
 import CartWidget from './CartWidget'
-import { Link, useNavigate } from 'react-router' // Asegurate de importar desde 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom' // Asegurate de importar desde 'react-router-dom'
 
 const Navbar = () => {
   const navigate = useNavigate()
